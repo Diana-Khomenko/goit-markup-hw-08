@@ -1,0 +1,29 @@
+.clients-item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.clients-link {
+  @extend %align;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--color-link-icom);
+  color: var(--color-link-icom);
+  transition: border-color var(--transition-duration) var(--transition-function),
+    color var(--transition-duration) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.clients-link-icom {
+  fill: currentColor;
+}

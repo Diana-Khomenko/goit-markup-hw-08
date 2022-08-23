@@ -1,0 +1,71 @@
+.team {
+  background-color: var(--team-color);
+}
+
+.team-item {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.team-list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.title {
+  @include font(36px, 700, 42.19px);
+  text-align: center;
+}
+
+.name-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.name-title {
+  @include font(16px, 500, 18.75px);
+  text-align: center;
+  color: var(--title-color);
+}
+
+.name-text {
+  @include font(16px, 400, 18.75px);
+
+  text-align: center;
+  color: var(--text-color);
+
+  margin-top: 10px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-list-link {
+  @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-link-icom);
+
+  transition: background-color var(--transition-duration)
+      var(--transition-function),
+    color var(--transition-duration) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--team-color);
+  }
+}
+
+.social-list-icom {
+  fill: currentColor;
+}
