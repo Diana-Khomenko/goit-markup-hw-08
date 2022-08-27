@@ -18,6 +18,12 @@
     pointer-events: auto;
     transition: opacity 500ms linear, visibility 500ms linear;
   }
+  .mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
