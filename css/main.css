@@ -693,27 +693,27 @@ address {
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/bg-mobile@2x.jpg);
+    background-image: url(../images/hero/bg-mobile@2x.jpg);
   }
 }
 @media screen and (max-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/bg-table@1x.jpg);
+    background-image: url(../images/hero/bg-table@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/bg-table@2x.jpg);
+    background-image: url(../images/hero/bg-table@2x.jpg);
   }
 }
 @media screen and (max-width: 1200px) {
   .hero {
-    background-image: url(../../images/hero/bg-desktop@1x.jpg);
+    background-image: url(../images/hero/bg-desktop@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../../images/hero/bg-desktop@2x.jpg);
+    background-image: url(../images/hero/bg-desktop@2x.jpg);
   }
 }
 .properties {
