@@ -27,3 +27,25 @@
 .clients-link-icom {
   fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+  .clients-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .title {
+    @include font(36px, 700, 42.19px);
+    text-align: center;
+  }
+}

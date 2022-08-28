@@ -87,3 +87,24 @@ footer {
 .social-list__icom {
   fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+  .container-footer {
+    display: block;
+    text-align: center;
+  }
+  .container-footer--riht {
+    margin: 0;
+  }
+  .footer-form-wrapper {
+    margin: 0;
+  }
+  .footer-form-wrapper {
+    margin: 0;
+  }
+  .footer-form {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+}

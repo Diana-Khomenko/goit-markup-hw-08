@@ -69,3 +69,25 @@
 .social-list-icom {
   fill: currentColor;
 }
+
+@media screen and (max-width: 767px) {
+  .team-item {
+    display: block;
+  }
+  .title {
+    @include font(28px, 700, 32.81px);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .title {
+    @include font(28px, 700, 32.81px);
+    text-align: center;
+  }
+}
