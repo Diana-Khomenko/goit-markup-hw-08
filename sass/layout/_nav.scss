@@ -1,5 +1,14 @@
 .btn-nav__item {
-  @extend %align;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .btn-nav__list:not(:last-child) {

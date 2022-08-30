@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.btn-nav__item, .social-list__link, .clients-link, .social-list-link, .properties-cards, .modal-form-chec-desk, .modal-close-btn {
+.social-list__link, .clients-link, .social-list-link, .modal-form-chec-desk, .modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,7 +278,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -305,6 +305,16 @@ address {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -637,7 +647,7 @@ address {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
   .hero {
-    background-image: url(../images/hero/bg-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -647,7 +657,7 @@ address {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero/bg-table@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-table@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -666,9 +676,15 @@ address {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/hero/bg-desktop@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop@2x.jpg);
   }
 }
+.properties-item {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
 .title-properties {
   font-size: 36px;
   line-height: 1.17;
@@ -678,11 +694,6 @@ address {
 
 .properties {
   background-color: var(--properties-color);
-}
-
-.properties-item {
-  display: flex;
-  justify-content: space-between;
 }
 
 .properties-list:not(:last-child) {
@@ -709,23 +720,35 @@ address {
 }
 
 .properties-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 
 @media screen and (max-width: 767px) {
-  .properties-item {
-    display: block;
-    align-items: center;
-    text-align: center;
-  }
   .section__properties {
     padding-top: 39px;
     padding-bottom: 60px;
   }
   .properties-text {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .properties-item {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .properties-item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0;
   }
 }
 .activity {
@@ -1196,6 +1219,18 @@ footer {
   }
   .footer-form-text {
     text-align: left;
+  }
+}
+.btn-nav__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .btn-nav__list:not(:last-child) {
