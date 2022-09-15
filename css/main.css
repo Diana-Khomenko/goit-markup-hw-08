@@ -92,6 +92,8 @@ address {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -106,7 +108,7 @@ address {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 769px) {
   .container {
     width: 1200px;
   }
@@ -510,11 +512,22 @@ address {
   .contact__table {
     display: block;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 769px) and (max-width: 1600px) {
+  .contact__table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
   .top-header {
     background-color: var(--background-color);
     padding-top: 26px;
     padding-bottom: 26px;
   }
+}
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 87px;
     font-family: "Raleway", sans-serif;
@@ -523,9 +536,13 @@ address {
     line-height: 1.17;
     color: #000000;
   }
+}
+@media screen and (min-width: 768px) {
   .site-item:not(:last-child) {
     margin-right: 50px;
   }
+}
+@media screen and (min-width: 768px) {
   .site-link {
     position: relative;
     font-weight: 500;
@@ -537,6 +554,8 @@ address {
   .site-link:hover, .site-link:focus {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 768px) {
   .site-link.current::before {
     content: "";
     height: 4px;
@@ -546,9 +565,13 @@ address {
     width: 100%;
     bottom: -28px;
   }
+}
+@media screen and (min-width: 768px) {
   .current {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 768px) {
   .contact-link {
     display: flex;
     align-items: center;
@@ -558,19 +581,34 @@ address {
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color var(--transition-duration) var(--transition-function);
+    margin-right: 30px;
   }
   .contact-link:hover, .contact-link:focus {
     color: var(--accent-color);
   }
+}
+@media screen and (min-width: 768px) {
   .contact-item-phone {
     margin-top: 10px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 769px) and (max-width: 1600px) {
+  .contact-item-phone {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
   .icon-envelope {
     width: 16px;
     height: 12px;
     fill: currentColor;
     margin-right: 8px;
   }
+}
+@media screen and (min-width: 768px) {
   .icon-smartphone {
     width: 10px;
     height: 16px;
@@ -645,26 +683,30 @@ address {
   margin-bottom: 30px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), screen and (min-resolution: 192dpi) and (max-width: 768px), screen and (min-resolution: 2dppx) and (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
+    min-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-table@1x.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
+    min-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-table@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    min-width: 1600px;
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop@1x.jpg);
   }
   .main-title {

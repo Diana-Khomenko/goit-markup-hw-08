@@ -57,6 +57,11 @@
 
   .contact__table {
     display: block;
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .top-header {
@@ -116,6 +121,7 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color var(--transition-duration) var(--transition-function);
+    margin-right: 30px;
 
     &:hover,
     &:focus {
@@ -125,6 +131,12 @@
 
   .contact-item-phone {
     margin-top: 10px;
+    @media screen and (min-width: 769px) and (max-width: 1600px) {
+      display: flex;
+      margin-top: 0;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .icon-envelope {
