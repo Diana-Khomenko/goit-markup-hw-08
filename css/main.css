@@ -473,13 +473,13 @@ address {
   background-color: var(--background-color);
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .page-header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
@@ -1282,7 +1282,7 @@ button {
 }
 
 .navigation__list {
-  flex-basis: calc 13.3333333333;
+  flex-basis: 13.3333333333;
 }
 
 .navigation__link {
