@@ -73,7 +73,7 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer-form-wrapper {
     margin-top: 60px;
   }
@@ -107,7 +107,10 @@
 
 @media screen and (min-width: 768px) {
   .footer-form {
-    display: inline;
+    display: block;
+  }
+  .footer-form-wrapper {
+    margin: 0;
   }
   .footer-form-input {
     width: 450px;
@@ -130,8 +133,8 @@
     }
   }
   .footer-form-wrapper {
-    margin-left: 166px;
-    margin-right: 152px;
+    // margin-left: 166px;
+    // margin-right: 152px;
   }
 }
 

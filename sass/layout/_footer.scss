@@ -1,6 +1,12 @@
 footer {
+  text-align: center;
   background-color: #2f303a;
   padding: 60px 0;
+  @media screen and (min-width: 769px) {
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: auto;
+  }
 }
 
 .logo-footer {
@@ -113,16 +119,16 @@ footer {
   }
   .container-footer__table {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
   }
   .container-footer--left {
     margin-left: 76px;
-  }
-  .logo-footer {
     text-align: center;
   }
+  // .logo-footer {
+  //   text-align: center;
+  // }
   .container-footer--riht {
     margin-left: 0;
     margin-right: 89px;
@@ -132,7 +138,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .container-footer {
     display: flex;
     align-items: baseline;

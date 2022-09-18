@@ -5,14 +5,21 @@
 }
 
 .navigation {
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   gap: 30px;
   margin-top: 50px;
 }
 
 .navigation__list {
-  flex-basis: calc((100 - 2 * 30) / 3);
+  // flex-basis: calc((100% - 30) / 2);
 }
 
 .navigation__link {
