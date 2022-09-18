@@ -508,6 +508,7 @@ address {
   .site-list {
     display: flex;
     align-items: center;
+    margin-left: 87px;
   }
   .contact__table {
     display: block;
@@ -726,16 +727,18 @@ address {
   align-items: center;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .properties-item {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
 
 .title-properties {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   padding-top: 0px;
-}
-
-.properties {
-  background-color: var(--properties-color);
 }
 
 .properties-list:not(:last-child) {
@@ -778,19 +781,8 @@ address {
   .properties-text {
     margin-bottom: 30px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .properties-item {
-    display: flex;
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .properties-item {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 0;
+  .properties-list:not(:last-child) {
+    margin: auto;
   }
 }
 .activity {
@@ -911,7 +903,6 @@ address {
 }
 @media screen and (min-width: 768px) {
   .team-item {
-    display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -980,10 +971,6 @@ footer {
     max-width: 1600px;
     margin: auto;
   }
-}
-
-.logo-footer {
-  margin-right: 0px;
 }
 
 .address {
@@ -1068,6 +1055,9 @@ footer {
     display: block;
     text-align: center;
   }
+  .logo-footer {
+    margin: 0;
+  }
   .container-footer--riht {
     margin: 0;
   }
@@ -1098,6 +1088,9 @@ footer {
     margin-left: 0;
     margin-right: 89px;
   }
+  .logo {
+    margin: auto;
+  }
   .footer-form-text {
     margin-bottom: 20px;
   }
@@ -1112,10 +1105,13 @@ footer {
   }
   .container-footer--left {
     margin-left: 0;
-    margin-right: 60px;
+    margin-right: 0px;
   }
   .address {
     text-align: left;
+  }
+  .logo {
+    margin-right: 93px;
   }
 }
 .footer-form-wrapper {
@@ -1222,7 +1218,7 @@ footer {
     display: block;
   }
   .footer-form-wrapper {
-    margin: 0;
+    margin: 60px;
   }
   .footer-form-input {
     width: 450px;
@@ -1327,7 +1323,7 @@ button {
   gap: 30px;
   margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation {
     display: block;
     margin-left: auto;

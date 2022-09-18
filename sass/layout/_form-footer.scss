@@ -110,7 +110,7 @@
     display: block;
   }
   .footer-form-wrapper {
-    margin: 0;
+    margin: 60px;
   }
   .footer-form-input {
     width: 450px;
@@ -131,10 +131,6 @@
       outline: none;
       border-color: var(--accent-color);
     }
-  }
-  .footer-form-wrapper {
-    // margin-left: 166px;
-    // margin-right: 152px;
   }
 }
 

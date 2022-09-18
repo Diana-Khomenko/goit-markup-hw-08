@@ -9,10 +9,6 @@ footer {
   }
 }
 
-.logo-footer {
-  margin-right: 0px;
-}
-
 .address {
   margin-top: 20px;
 }
@@ -99,6 +95,10 @@ footer {
     display: block;
     text-align: center;
   }
+
+  .logo-footer {
+    margin: 0;
+  }
   .container-footer--riht {
     margin: 0;
   }
@@ -133,6 +133,13 @@ footer {
     margin-left: 0;
     margin-right: 89px;
   }
+  .logo {
+    margin: auto;
+  }
+  // .logo-footer {
+  //   margin-right: 0;
+  // }
+
   .footer-form-text {
     margin-bottom: 20px;
   }
@@ -148,9 +155,13 @@ footer {
   }
   .container-footer--left {
     margin-left: 0;
-    margin-right: 60px;
+    margin-right: 0px;
   }
   .address {
     text-align: left;
+  }
+
+  .logo {
+    margin-right: 93px;
   }
 }
